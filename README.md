@@ -14,7 +14,7 @@ Usage:
 To see usage of the code, do:
 ./bsl_mtl
 
-Usage: ./bsl_mtl <config-file> <trainMatrix> <lambda> <num_factors_K> <model_prefix> <costFile> <cost> <l1/l2> <testFile> <iter-count>
+Usage: ./bsl_mtl \<config-file\> \<trainMatrix\> \<lambda\> \<num_factors_K\> \<model_prefix\> \<costFile\> \<cost\> \<l1/l2\> \<testFile\> \<iter-count\>
 
 The last parameter (iter-count) is optional and is to be ignored.
 
@@ -30,7 +30,7 @@ Number of tasks in our setting: 3
 You can change the following parameters (some are on the command prompt and the rest are in the config-file: params.cfg).
 Open and check the file params.cfg for what data is used and other parameters.
 
-trainMatrix: file containing training graph with edges from all tasks (format of each line of file: <node1> <node2> <edge-weight>)
+trainMatrix: file containing training graph with edges from all tasks (format of each line of file: \<node1\> \<node2\> \<edge-weight\>)
 
 taskIndices = "0 9305 103370"; (parameter from params.cfg, specifies the start line-number in training file for each task's training data)
 
@@ -48,7 +48,10 @@ cost=5 (This causes the loss on the training data to be multiplied by 5. I use t
 Output files:
 -------------
 Model files: 
-<model-prefix>.U.mod, <model-prefix>.V.mod, <model-prefix>.S_taskT.mod store these matrices for every few iterations
+
+\<model-prefix\>.U.mod, 
+\<model-prefix\>.V.mod, 
+\<model-prefix\>.S_taskT.mod store these matrices for every few iterations
 
 Matrix dimensions: 
 U (dimension dxk)
