@@ -49,11 +49,17 @@ Output files:
 -------------
 Model files: 
 
+
 \<model-prefix\>.U.mod, 
+
 \<model-prefix\>.V.mod, 
+
 \<model-prefix\>.S_taskT.mod store these matrices for every few iterations
 
 Matrix dimensions: 
+
 U (dimension dxk)
+
 V (dimension dxk)
+
 S (dimension dxd)
